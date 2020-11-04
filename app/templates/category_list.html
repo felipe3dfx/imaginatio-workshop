@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+
+    <h1>Categorías</h1>
+    <ul>
+        {% for category in object_list %}
+        <li>{{ category.name }}, {{ category.id }}, {{ category.is_active }}</li>
+        {% endfor %}
+    </ul>
+</head>
+<body>
+
+</body>
+</html>
